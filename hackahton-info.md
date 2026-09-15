@@ -2,6 +2,7 @@
 
 > **Repo:** [`DigiPaga/digi-agent-arbitrum`](https://github.com/DigiPaga/digi-agent-arbitrum)  
 > **Team:** [@ottodevs](https://github.com/ottodevs) · [@ozkite](https://github.com/ozkite) · [@DigiAgent](https://github.com/digiagent)
+
 > **Platform:** [HackQuest — Arbitrum Open House Singapore](https://arbitrum-singapore.hackquest.io/buildathons/Arbitrum-Open-House-Singapore-Online-Buildathon)  
 > **Host:** Arbitrum Foundation · **Mode:** Online  
 
