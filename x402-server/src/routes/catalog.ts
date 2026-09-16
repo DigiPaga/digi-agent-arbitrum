@@ -1,0 +1,1 @@
+import { Router } from 'express';\nconst router = Router();\nrouter.get('/', (req, res) => {\n  res.json({ catalog: [{ id: '1', name: 'Robot Blueprint', price: '0.5 USDC' }] });\n});\nexport const catalogRouter = router;
