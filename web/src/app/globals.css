@@ -1,0 +1,1 @@
+@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\nbody {\n  @apply bg-gray-50 text-gray-900 antialiased;\n}
