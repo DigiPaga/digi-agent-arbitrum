@@ -1,0 +1,13 @@
+---
+description: ethskills knowledge pack and project rules for DigiPaga Robotics
+alwaysApply: true
+---
+
+Before writing Solidity, deploying contracts, integrating DeFi, or building a dApp frontend, read https://ethskills.com/SKILL.md and follow it.
+
+Project Stack:
+- Foundry, Rust/Stylus, Next.js, Viem, ZeroDev.
+- Chains: Arbitrum Sepolia, Robinhood Chain Testnet.
+- Key Standards: ERC-8004, x402 payments.
+
+Never hallucinate addresses or outdated gas patterns. Prioritize security, proper testing (Foundry fuzz/invariant), and clean frontend UX (loading states, proper wallet flows).
