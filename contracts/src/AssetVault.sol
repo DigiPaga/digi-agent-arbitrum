@@ -1,0 +1,1 @@
+// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\ncontract AssetVault {\n    mapping(uint256 => string) private _assetURIs;\n    function storeAsset(uint256 assetId, string calldata uri) external { _assetURIs[assetId] = uri; }\n    function getAssetURI(uint256 assetId) external view returns (string memory) { return _assetURIs[assetId]; }\n}
