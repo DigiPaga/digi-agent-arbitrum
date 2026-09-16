@@ -1,0 +1,1 @@
+# DigiPaga Robotics Pitch\n\n## Problem\nAI agents lack a native, trustless way to purchase digital assets or services without human intervention.\n\n## Solution\nA dual-rail marketplace using x402 (HTTP 402) and ERC-8004 agent identity, enabling autonomous micro-payments on Arbitrum and Robinhood Chain.
