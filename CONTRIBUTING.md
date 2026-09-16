@@ -1,0 +1,1 @@
+# Contributing to DigiPaga Robotics\n\n1. Create a feature branch: `git checkout -b feat/your-feature`\n2. Make atomic commits.\n3. Run `forge test` and `npm run lint` before pushing.\n4. Open a PR for review.
