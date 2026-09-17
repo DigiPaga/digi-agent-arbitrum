@@ -166,3 +166,24 @@ sequenceDiagram
 - **Monitoring**: Tenderly (transaction debugging)
 
 ---
+## 📜 Smart Contracts
+
+### Core Contracts
+
+| Contract | Purpose | Chain |
+|----------|---------|-------|
+| **AgentRegistry** | ERC-8004 agent identity management | Arbitrum Sepolia, RH Testnet |
+| **RoboticsMarketplace** | Asset listing and purchase logic | Arbitrum Sepolia, RH Testnet |
+| **AssetVault** | Escrow and IPFS delivery | Arbitrum Sepolia, RH Testnet |
+| **X402Facilitator** | Payment settlement and verification | Arbitrum Sepolia, RH Testnet |
+
+### Contract Addresses (Testnet)
+
+| Network | AgentRegistry | Marketplace | USDC |
+|---------|--------------|-------------|------|
+| **Arbitrum Sepolia** | `0x...` (TBD) | `0x...` (TBD) | `0x75faf114eafb1BDbe4F43213Fe49D7C47aA714B3` |
+| **Robinhood Testnet** | `0x...` (TBD) | `0x...` (TBD) | `0x...` (TBD) |
+
+*Addresses will be updated after deployment*
+
+---
