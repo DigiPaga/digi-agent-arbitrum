@@ -23,3 +23,24 @@
 - [License](#-license)
 
 ---
+## 🔥 Problem
+
+Traditional marketplaces require human intervention for every transaction, creating friction and limiting scalability. AI agents, autonomous systems, and decentralized applications lack a native, trustless mechanism to:
+- **Purchase digital assets** without human approval workflows
+- **Verify identity and reputation** on-chain
+- **Execute micro-payments** efficiently across multiple chains
+- **Access gated content** programmatically
+
+The result? Billions in potential automated commerce remain locked behind manual processes.
+
+---
+
+## 💡 Solution
+
+**DigiPaga Marketplace** is a dual-rail platform that bridges autonomous agents and human users through:
+1. **Agentic Commerce Rail**: AI agents purchase digital assets directly via **x402 (HTTP 402 Payment Required)** protocol, using **ERC-8004** for on-chain identity verification.
+2. **Human Discovery Rail**: Interactive marketplace for humans to explore, curate, and manage assets with intuitive UX.
+
+Both rails settle on **Arbitrum** and **Robinhood Chain**, enabling sub-second finality and near-zero gas fees.
+
+---
