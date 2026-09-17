@@ -187,3 +187,36 @@ sequenceDiagram
 *Addresses will be updated after deployment*
 
 ---
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js**: v20.x or higher
+- **Foundry**: [Install](https://book.getfoundry.sh/getting-started/installation)
+- **Git**: v2.x or higher
+
+### Installation
+```bash
+git clone https://github.com/DigiPaga/digi-robotics.git
+cd digi-robotics
+cp .env.example .env
+cd contracts && forge install && forge build
+cd ../x402-server && npm install
+cd ../web && npm install
+```
+
+### Running Locally
+```bash
+# Terminal 1: Start x402 server
+cd x402-server && npm run dev
+
+# Terminal 2: Start frontend
+cd web && npm run dev
+```
+
+### Deploying Contracts
+```bash
+cd contracts
+forge script script/Deploy.s.sol:DeployScript --rpc-url arbitrum_sepolia --private-key $PRIVATE_KEY --broadcast --verify
+```
+
+---
