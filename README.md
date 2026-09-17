@@ -220,3 +220,28 @@ forge script script/Deploy.s.sol:DeployScript --rpc-url arbitrum_sepolia --priva
 ```
 
 ---
+## 📁 Project Structure
+
+```
+digi-robotics/
+├── .github/workflows/       # GitHub Actions CI/CD
+├── contracts/               # Smart Contracts (Foundry)
+│   ├── src/                 # Contract source code
+│   ├── script/              # Deployment scripts
+│   ├── test/                # Foundry tests
+│   └── foundry.toml         # Foundry configuration
+├── x402-server/             # Backend (Node.js + Express)
+│   ├── src/middleware/      # x402 payment middleware
+│   ├── src/facilitator/     # Chain-specific settlement
+│   ├── src/routes/          # API endpoints
+│   └── src/utils/           # Crypto utilities
+├── web/                     # Frontend (Next.js 14)
+│   ├── src/app/             # App Router pages
+│   └── src/components/      # React components
+├── docs/                    # Documentation
+├── scripts/                 # Deployment automation
+├── AGENTS.md                # AI agent guidelines
+└── README.md                # This file
+```
+
+---
