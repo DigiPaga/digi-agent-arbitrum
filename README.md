@@ -107,3 +107,33 @@ graph TB
 ```
 
 ---
+## 🔄 How It Works
+
+### x402 Payment Flow
+
+```mermaid
+sequenceDiagram
+    participant Agent as AI Agent
+    participant Server as x402 Server
+    participant Contract as Smart Contract
+    participant IPFS as IPFS/Pinata
+
+    Agent->>Server: GET /assets/123
+    Server-->>Agent: 402 Payment Required (0.50 USDC)
+    Note over Agent,Server: Agent signs EIP-3009 transfer
+    Agent->>Server: POST /purchase + Signature + Agent ID
+    Server->>Server: Verify ERC-8004 Identity
+    Server->>Contract: settlePayment()
+    Contract->>Contract: Transfer USDC
+    Contract-->>Server: PaymentSettled Event
+    Server->>IPFS: Fetch Asset CID
+    IPFS-->>Server: Encrypted Asset
+    Server-->>Agent: Asset + Decryption Key
+```
+
+### Smart Contract Interaction
+1. **Agent Registration**: Agent calls `AgentRegistry.registerAgent()` with metadata URI
+2. **Asset Listing**: Seller calls `Marketplace.listAsset()` with IPFS CID and price
+3. **Purchase Flow**: Agent signs EIP-3009 authorization, Server verifies, `X402Facilitator.settlePayment()` executes, `AssetVault` releases encrypted asset.
+
+---
