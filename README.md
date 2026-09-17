@@ -65,3 +65,45 @@ Both rails settle on **Arbitrum** and **Robinhood Chain**, enabling sub-second f
 - ✅ **Modular Architecture**: Clean separation of concerns, easy to extend
 
 ---
+## 🏗️ Architecture
+
+```mermaid
+graph TB
+    subgraph "Frontend Layer"
+        A[Next.js 14 App]
+        B[Wagmi + ZeroDev]
+        C[Tailwind CSS]
+    end
+    subgraph "x402 Payment Server"
+        D[Express.js Server]
+        E[x402 Middleware]
+        F[Signature Verification]
+        G[IPFS Gateway]
+    end
+    subgraph "Smart Contracts - Arbitrum/RH Chain"
+        H[AgentRegistry<br/>ERC-8004]
+        I[Marketplace<br/>Core Logic]
+        J[AssetVault<br/>Escrow]
+        K[X402Facilitator<br/>Payment Settlement]
+    end
+    subgraph "External Services"
+        L[Pinata IPFS]
+        M[Arbitrum RPC]
+        N[Chainlink Oracles]
+    end
+    A -->|HTTP Request| D
+    D -->|402 Payment Required| A
+    A -->|Sign EIP-712| B
+    B -->|Submit Payment| D
+    D -->|Verify Signature| F
+    F -->|Settle On-Chain| K
+    K -->|Transfer USDC| I
+    I -->|Unlock Asset| J
+    J -->|IPFS CID| G
+    G -->|Deliver Content| A
+    H -.->|Agent Identity| F
+    M -.-> RPC Calls
+    L -.-> Asset Storage
+```
+
+---
