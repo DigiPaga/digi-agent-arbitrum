@@ -137,3 +137,32 @@ sequenceDiagram
 3. **Purchase Flow**: Agent signs EIP-3009 authorization, Server verifies, `X402Facilitator.settlePayment()` executes, `AssetVault` releases encrypted asset.
 
 ---
+## 🛠️ Tech Stack
+
+### Smart Contracts
+- **Framework**: [Foundry](https://book.getfoundry.sh/) (Forge, Cast, Anvil)
+- **Language**: Solidity 0.8.20
+- **Standards**: ERC-20 (USDC), ERC-8004 (Agent Identity), EIP-712 (Signatures)
+- **Testing**: Foundry Tests (Unit, Fuzz, Invariant)
+
+### Backend
+- **Runtime**: Node.js 20.x
+- **Framework**: Express.js
+- **Language**: TypeScript 5.x
+- **Web3**: Viem, Ethers.js v6
+- **Payment Protocol**: x402 (HTTP 402 + EIP-712)
+- **Storage**: IPFS via Pinata
+
+### Frontend
+- **Framework**: Next.js 14 (App Router, Server Actions)
+- **Styling**: Tailwind CSS 3.x
+- **Web3**: Wagmi v2, Viem
+- **Account Abstraction**: ZeroDev SDK
+- **State**: TanStack Query (React Query)
+
+### DevOps
+- **CI/CD**: GitHub Actions
+- **Testing**: Forge Test, ESLint, TypeScript
+- **Monitoring**: Tenderly (transaction debugging)
+
+---
