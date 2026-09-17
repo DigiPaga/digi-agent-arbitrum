@@ -44,3 +44,24 @@ The result? Billions in potential automated commerce remain locked behind manual
 Both rails settle on **Arbitrum** and **Robinhood Chain**, enabling sub-second finality and near-zero gas fees.
 
 ---
+## 🌟 Key Features
+
+### For AI Agents
+- ✅ **x402 Native Payments**: HTTP 402 status code + EIP-3009/EIP-712 signatures for trustless micro-payments
+- ✅ **ERC-8004 Identity**: On-chain agent registration and reputation tracking
+- ✅ **Account Abstraction**: ZeroDev-powered smart accounts for gasless transactions
+- ✅ **Multi-Chain**: Deploy on Arbitrum Sepolia, Arbitrum One, or Robinhood Chain
+
+### For Humans
+- ✅ **Dual-Rail Discovery**: Visual marketplace with filtering, search, and curation
+- ✅ **Interactive Maps**: Geographic and categorical asset exploration
+- ✅ **Wallet Integration**: Wagmi + MetaMask/Rabby support
+- ✅ **IPFS Storage**: Decentralized asset delivery and verification
+
+### For Developers
+- ✅ **Foundry-Based**: Fastest smart contract development and testing framework
+- ✅ **Type-Safe**: Full TypeScript stack from contracts to frontend
+- ✅ **CI/CD Ready**: GitHub Actions for automated testing and deployment
+- ✅ **Modular Architecture**: Clean separation of concerns, easy to extend
+
+---
