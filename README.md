@@ -245,3 +245,50 @@ digi-robotics/
 ```
 
 ---
+## 👥 Team
+
+**Built by the DigiPaga Team for the Arbitrum Open House Singapore Buildathon**
+- **Oscar** ([@ozkite](https://github.com/ozkite)) - Smart Contracts & Backend
+- **Otto** ([@ottodevs](https://github.com/ottodevs)) - Frontend & Integration
+
+---
+
+## 📄 License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🏆 Hackathon
+
+### Arbitrum Open House Singapore Buildathon
+**Participate**: [Join on HackQuest](https://arbitrum-singapore.hackquest.io)  
+**Event**: [Arbitrum Open House](https://openhouse.arbitrum.io)
+
+- **Track**: Overall Prize + Robinhood Chain
+- **Category**: Agentic Commerce, x402 Payments, Dual-Rail Marketplace
+- **Submission Date**: October 4, 2026
+- **Prize Pool**: $115,000 USD
+
+### Sponsors & Partners
+<div align="center">
+  [![Arbitrum](https://img.shields.io/badge/Arbitrum-Foundation-2D3748?style=for-the-badge&logo=arbitrum&logoColor=white)](https://arbitrum.io)
+  [![Robinhood](https://img.shields.io/badge/Robinhood-Chain-00C805?style=for-the-badge&logo=robinhood&logoColor=white)](https://robinhood.com/us/en/crypto/chain/)
+  [![GMX](https://img.shields.io/badge/GMX-Protocol-1C449B?style=for-the-badge&logo=gm&logoColor=white)](https://gmx.io)
+  [![Pendle](https://img.shields.io/badge/Pendle-Finance-7B3FE4?style=for-the-badge&logo=pendle&logoColor=white)](https://www.pendle.finance)
+</div>
+
+---
+
+## 📚 Resources
+- [Arbitrum Documentation](https://docs.arbitrum.io/)
+- [x402 Protocol Specification](https://github.com/x402/x402)
+- [ERC-8004 Standard](https://eips.ethereum.org/EIPS/eip-8004)
+- [Foundry Book](https://book.getfoundry.sh/)
+- [ZeroDev SDK](https://zerodev.app/docs)
+- [Robinhood Chain Docs](https://docs.robinhood.com/chain)
+
+---
+
+<div align="center">
+  <strong>Built with ❤️ for the future of autonomous commerce</strong>
+</div>
