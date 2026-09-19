@@ -3,8 +3,10 @@ pragma solidity ^0.8.20;
 
 import "forge-std/Test.sol";
 import "../src/X402Facilitator.sol";
+import "../src/interfaces/IX402Facilitator.sol";
 
-contract X402FacilitatorTest is Test {
+// Al heredar de IX402Facilitator, el evento PaymentSettled entra en el alcance de este contrato
+contract X402FacilitatorTest is Test, IX402Facilitator {
     X402Facilitator facilitator;
     address mockToken = address(0x1);
     address buyer = address(0x2);
@@ -15,7 +17,7 @@ contract X402FacilitatorTest is Test {
     }
 
     function test_SettlePayment() public {
-        // Foundry espera el evento tal como se define en el contrato
+        // Ahora Foundry reconoce el evento porque este contrato hereda la interfaz
         vm.expectEmit(true, true, true, true);
         emit PaymentSettled(1, buyer, agent, 100);
         
