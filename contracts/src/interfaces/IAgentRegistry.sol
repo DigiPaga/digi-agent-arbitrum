@@ -1,1 +1,9 @@
-// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\ninterface IAgentRegistry {\n    struct AgentIdentity { address agentAddress; address owner; string agentType; string metadataURI; bool isActive; uint256 registeredAt; }\n    function registerAgent(address agentAddress, string calldata agentType, string calldata metadataURI) external returns (uint256);\n    function verifyAgent(address agentAddress, bytes32 verificationHash) external;\n    function getAgentIdentity(address agentAddress) external view returns (AgentIdentity memory);\n    function isAgentActive(address agentAddress) external view returns (bool);\n}
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+interface IAgentRegistry {
+    struct AgentIdentity { address agentAddress; address owner; string agentType; string metadataURI; bool isActive; uint256 registeredAt; }
+    function registerAgent(address agentAddress, string calldata agentType, string calldata metadataURI) external returns (uint256);
+    function verifyAgent(address agentAddress, bytes32 verificationHash) external;
+    function getAgentIdentity(address agentAddress) external view returns (AgentIdentity memory);
+    function isAgentActive(address agentAddress) external view returns (bool);
+}

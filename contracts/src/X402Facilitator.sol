@@ -1,1 +1,11 @@
-// SPDX-License-Identifier: MIT\npragma solidity ^0.8.20;\nimport "@openzeppelin/contracts/token/ERC20/IERC20.sol";\nimport "./interfaces/IX402Facilitator.sol";\ncontract X402Facilitator is IX402Facilitator {\n    IERC20 public immutable token;\n    constructor(address _token) { token = IERC20(_token); }\n    function settlePayment(uint256 assetId, address buyer, address agent, uint256 amount, bytes calldata signature) external override {\n        emit PaymentSettled(assetId, buyer, agent, amount);\n    }\n}
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./interfaces/IX402Facilitator.sol";
+contract X402Facilitator is IX402Facilitator {
+    IERC20 public immutable token;
+    constructor(address _token) { token = IERC20(_token); }
+    function settlePayment(uint256 assetId, address buyer, address agent, uint256 amount, bytes calldata signature) external override {
+        emit PaymentSettled(assetId, buyer, agent, amount);
+    }
+}
