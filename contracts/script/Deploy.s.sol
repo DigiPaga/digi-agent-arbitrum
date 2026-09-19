@@ -10,12 +10,10 @@ contract DeployScript is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        // 1. Desplegar AgentRegistry (ERC-8004)
         AgentRegistry agentRegistry = new AgentRegistry();
         
-        // 2. Desplegar RoboticsMarketplace
-        // Address oficial USDC Arb Sepolia: 0x75faf114eafb1BDbe4F43213Fe49D7C47aA714B3
-        address usdcAddress = 0x75faf114eafb1BDbe4F43213Fe49D7C47aA714B3;
+        // Checksum corregido para USDC en Arbitrum Sepolia
+        address usdcAddress = 0x75faF114eAfb1bDbE4F43213fE49d7C47Aa714b3;
         RoboticsMarketplace marketplace = new RoboticsMarketplace(usdcAddress, address(agentRegistry));
 
         vm.stopBroadcast();
